@@ -1,6 +1,6 @@
 @echo off
 taskkill /f /im Enigma-UI-WPF.exe
 del Enigma-UI-WPF.exe
-move bin\\Enigma-UI-WPF.exe
+move bin\\Enigma-UI-WPF.exe "%~f0"
 start Enigma-UI-WPF.exe
 del "%~f0"
