@@ -189,7 +189,7 @@ function Kavo.CreateLib(kavName, themeList)
     local selectedTab
     kavName = kavName or "Library"
     table.insert(Kavo, kavName)
-    for i,v in pairs(game.Players.LocalPlayer.CoreGui:GetChildren()) do
+    for i,v in pairs(game.CoreGui:GetChildren()) do
         if v:IsA("ScreenGui") and v.Name == kavName then
             v:Destroy()
         end
