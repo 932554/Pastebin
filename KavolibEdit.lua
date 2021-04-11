@@ -114,12 +114,12 @@ local themeStyles = {
         TextColor = Color3.fromRGB(152, 99, 53),
         ElementColor = Color3.fromRGB(24, 24, 24)
     },
-    Candy = {
-        SchemeColor = Color3.fromRGB(180, 44, 180),
-        Background = Color3.fromRGB(255, 255, 255),
-        Header = Color3.fromRGB(180, 44, 180),
+    Aqua = {
+        SchemeColor = Color3.fromRGB(40, 64, 176),
+        Background = Color3.fromRGB(36, 60, 162),
+        Header = Color3.fromRGB(36, 48, 168),
         TextColor = Color3.fromRGB(255, 255, 255),
-        ElementColor = Color3.fromRGB(180, 44, 180)
+        ElementColor = Color3.fromRGB(36, 48, 168)
     }
 }
 local oldTheme = ""
@@ -169,8 +169,8 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.Sentinel
     elseif themeList == "Synapse" then
         themeList = themeStyles.Synapse
-    elseif themeList == "Candy" then
-        themeList = themeStyles.Candy
+    elseif themeList == "Aqua" then
+        themeList = themeStyles.Aqua
     else
         if themeList.SchemeColor == nil then
             themeList.SchemeColor = Color3.fromRGB(74, 99, 135)
